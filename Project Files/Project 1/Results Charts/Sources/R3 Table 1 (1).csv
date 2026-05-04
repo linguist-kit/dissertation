@@ -1,0 +1,4 @@
+Model,Anthropic,Anthropic,Anthropic,Anthropic,Anthropic,Anthropic_mi,Anthropic_mi,Anthropic_mi,Anthropic_mi,Anthropic_mi
+Metric,Precision,Recall,F1,Kappa,Alpha,Precision,Recall,F1,Kappa,Alpha
+Permutation,,,,,,,,,,
+full,0.6750924999600754,0.6725804779673238,0.6415857162941745,0.5248867003490852,0.514671526444992,0.7022052932912634,0.6931126679129865,0.6545749864830744,0.5420788970602561,0.5302726607271133

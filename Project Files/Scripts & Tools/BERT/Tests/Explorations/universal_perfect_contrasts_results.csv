@@ -1,0 +1,4 @@
+Anchor,Compare,Similarity
+They have lived here for ten years.,They have lived here for ten years (and still do).,0.97599506
+They have lived here for ten years.,They have lived here for ten years (and are moving today).,0.9499257
+They have lived here for ten years.,"They have lived here for ten years (in the 1990s, but now they live elsewhere).",0.94085395

@@ -1,0 +1,35 @@
+{
+  "feature_id": "DtExp",
+  "version": "2026-04-24",
+  "name": "Diatam: Experiential",
+  "intuition": "The gram presents the event as part of the subject’s life history. It answers the question of whether the event has occurred at least once, without asserting that a resulting state currently holds.",
+  "set_to_1_if": [
+    "The clause contains explicit frequency adverbs indicating repetition or distinct instances (e.g., 'once', 'twice', 'often', 'ever', 'never', 'three times').",
+    "The gram is a negative Perfect (e.g., 'have not seen', 'has not shrunk'), which functions as a claim about the absence of the event in the subject's history.",
+    "The verb denotes perception or communication where the focus is on the occurrence of an experience at least once, rather than on a resulting state or transfer.",
+    "The verb denotes a bounded activity or process where the focus is on having undergone the experience, not on a persisting result."
+  ],
+  "set_to_0_if": [
+    "The verb entails a change of state or location, and that resulting state holds at the reference time.",
+    "The verb entails a change of possession or social/legal status that remains in effect at the reference time.",
+    "The verb entails a transition into a new physical location, and the subject remains at that location at the reference time.",
+    "The clause contains a duration adverbial (e.g., 'for three days', 'since yesterday', 'all this time'), indicating a continuing situation rather than a completed life experience."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "I have often visited that park. (Frequency adverbial -> 1)",
+    "She has visited that part three times. (Frequency adverbial -> 1)",
+    "Have you ever tried sushi? (Entry in subject's life history -> 1)",
+    "He had not sinned. (Negative Perfect -> 1)",
+    "We have seen the Eiffel Tower. (Perception focusing on occurrence rather than result state -> 1)"
+  ],
+  "examples_negative": [
+    "He has been arrested. (Introduces result state [be in custody] -> 0)",
+    "The time has come. (Introduces current state of affairs -> 0)",
+    "I have broken the vase. (Introduces result state -> 0)",
+    "The guests have arrived. (Describes a physical change of location that persists at reference time -> 0)",
+    "He has died. (Permanent result -> 0)",
+    "They have traveled for three days. (Duration indicates an ongoing situation rather than a life-history entry -> 0)",
+    "We should have eaten. (Irrealis, unrealized situation -> 0)"
+  ]
+}

@@ -1,0 +1,21 @@
+,Pred_,Pred_compound,"Pred_compound, guo, you","Pred_compound, le","Pred_compound, le, yi, yijing","Pred_compound, suo_de",Pred_guo,"Pred_guo, le, yi, yijing","Pred_guo, yi, yijing","Pred_guo, you",Pred_le,"Pred_le, yi, yijing","Pred_le, yi, zaoyi","Pred_le, zaojiu",Pred_nullmarked,Pred_suo_de,Pred_yi,"Pred_yi, yijing","Pred_yi, zaoyi",Pred_you
+True_,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+True_compound,6,0,0,0,0,0,2,0,0,0,4,0,0,0,4,0,0,0,0,0
+"True_compound, guo, you",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"True_compound, le",8,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0
+"True_compound, le, yi, yijing",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"True_compound, suo_de",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+True_guo,7,0,0,0,0,0,1,0,0,0,0,0,0,0,6,1,0,0,0,0
+"True_guo, le, yi, yijing",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_guo, yi, yijing",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_guo, you",4,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+True_le,40,7,0,0,0,0,1,0,0,0,7,1,0,0,15,3,0,0,0,0
+"True_le, yi, yijing",11,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0
+"True_le, yi, zaoyi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"True_le, zaojiu",1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+True_nullmarked,51,0,0,0,0,1,0,0,0,0,11,0,0,0,22,1,0,0,0,3
+True_suo_de,15,0,0,1,0,0,1,0,0,0,2,0,0,0,5,0,0,0,0,0
+True_yi,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"True_yi, yijing",4,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0
+"True_yi, zaoyi",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+True_you,6,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0

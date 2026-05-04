@@ -1,0 +1,10 @@
+,"Pred_could, participle","Pred_might, participle",Pred_participle,"Pred_participle, past","Pred_participle, past, present","Pred_participle, present","Pred_participle, should","Pred_participle, would",Pred_present
+"True_could, participle",0,1,0,0,0,0,0,0,0
+"True_might, participle",0,0,0,0,0,0,0,0,0
+True_participle,0,0,0,1,0,0,0,0,0
+"True_participle, past",0,0,0,63,0,2,0,4,0
+"True_participle, past, present",0,0,0,0,0,1,0,0,0
+"True_participle, present",0,0,0,1,0,203,0,0,0
+"True_participle, should",1,0,0,1,0,0,0,1,0
+"True_participle, would",1,0,3,4,0,0,1,1,0
+True_present,0,0,0,0,0,3,0,0,0

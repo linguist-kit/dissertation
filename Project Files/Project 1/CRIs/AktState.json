@@ -1,0 +1,36 @@
+{
+  "feature_id": "AktState",
+  "version": "2026-04-15",
+  "name": "Aktionsart: State",
+  "intuition": "A situation that holds over time without involving dynamic change or inherent progression. It has no inherent endpoint, and any subinterval of the situation is qualitatively identical to the whole.",
+  "set_to_1_if": [
+    "The target verb denotes a mental state, emotion, static perception, or cognitive condition that holds over time (e.g., 'know', 'believe', 'love', 'see' in its stative sense, 'understand').",
+    "The target verb denotes a durative attribute (e.g., 'be tall', 'be a good person').",
+    "The target verb denotes existence, possession, inclusion, or a stable relational configuration (e.g., 'be', 'exist', 'belong', 'contain', 'own', 'be in/at/on X').",
+    "The situation lacks internal dynamic development or change; no eventive unfolding occurs.",
+    "The situation does not require active effort, volitional engagement, or internally generated activity to be maintained over time."
+  ],
+  "set_to_0_if": [
+    "The situation involves dynamic change, internal eventive unfolding, or active progression.",
+    "The gram is morphologically marked as progressive, i.e., expressed as ‘be’ + a progressive participle ending in ‘-ing’ (not merely ‘been’ + past participle).",
+    "The target verb denotes a change-of-state, event boundary, or dynamic activity involving internal development.",
+    "The target verb denotes a bounded perceptual or cognitive event marking the onset or completion of awareness (e.g., 'saw the flash', 'heard the news', 'noticed the change'); such cases encode eventive change rather than a static condition."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "I have known him for ten years. (Durative mental state -> 1)",
+    "John is tall. (Durative attribute -> 1)",
+    "That is a tree. (Existence -> 1)",
+    "We have the key. (Possession -> 1)",
+    "The box contains books. (Static/persistent relation -> 1)",
+    "She is at the park. (Durative location -> 1)",
+    "The tree is in the park. (Does not require active effort or volitional engagement -> 1)"
+  ],
+  "examples_negative": [
+    "He runs every morning. (Dynamic activity -> 0)",
+    "She is singing. (Progressive aspect -> 0)",
+    "We built a house. (Bounded dynamic event -> 0)",
+    "The vase broke. (Bounded instantaneous event -> 0)",
+    "We heard the news. (Bounded perceptual event -> 0)"
+  ]
+}

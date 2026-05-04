@@ -1,0 +1,37 @@
+{
+  "feature_id": "AktAch",
+  "version": "2026-04-15",
+  "name": "Aktionsart: Achievement",
+  "intuition": "A dynamic change-of-state event conceived as punctual or near-instantaneous. It represents the boundary point of transition itself rather than an unfolding process phase. The event is the crossing of a definable threshold.",
+  "set_to_1_if": [
+    "The target verb denotes a punctual or near-instantaneous transition into a new state (e.g., 'die', 'find', 'lose', 'reach', 'arrive', 'start', 'stop').",
+    "The event can naturally be modified by a specific time-point adverbial (e.g., 'at noon', 'at that moment'), indicating occurrence at a defined temporal boundary (e.g., 'He arrived at noon').",
+    "The event does not permit interruption of an ongoing process phase; it either occurs or does not occur (e.g., one cannot meaningfully 'stop arriving').",
+    "The target verb denotes a punctual perceptual or cognitive transition into awareness or recognition (e.g., 'hear the news', 'see the truth', 'realize', 'recognize').",
+    "The event lacks measurable internal duration and is construed as occurring at a temporal boundary.",
+    "For cognitive or perceptual verbs that allow both punctual and durative readings, classify as achievement when the event denotes a single transition into awareness rather than a durative process."
+  ],
+  "set_to_0_if": [
+    "The event unfolds over a measurable duration rather than occurring at a single temporal boundary.",
+    "The event is punctual but does not entail a transition into a new result state (e.g., a single knock or cough).",
+    "The event can naturally occur as the complement of 'finish', indicating completion of a durative process (e.g., 'He finished building the house').",
+    "The apparent punctual transition represents the culmination of a durative process encoded in the predicate, rather than the event itself."
+  ],
+  "exceptions": [
+    "Even if an event requires extended preparation or causally preceding activity, it is classified as an achievement if the event itself is construed as a punctual boundary transition."
+  ],
+  "examples_positive": [
+    "He has died. (Punctual transition -> 1)",
+    "She has found the key. (Instantaneous discovery regardless of 'looking' preparatory phase -> 1)",
+    "They have reached the summit. (Instantaneous transition regardless of 'climbing' process phase ->1)",
+    "We arrived at noon. (Specific time point adverbial -> 1)",
+    "They have heard the news. (Punctual perceptual transition -> 1)"
+  ],
+  "examples_negative": [
+    "We have built a house. (Inherent process phase -> 0)",
+    "They have run every morning. (Durative activity without defined endpoint or goal -> 0)",
+    "He coughed once. (Punctual event that does not entail a transition into a new result state -> 0)",
+    "He coughed for five minutes. (Series of punctual events that do not transition into a new result state -> 0)",
+    "She finished reading the book. (Indicates durative process phase -> 0)"
+  ]
+}

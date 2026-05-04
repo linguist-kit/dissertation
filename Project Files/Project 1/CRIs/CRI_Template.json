@@ -1,0 +1,21 @@
+{
+  "feature_id": "ID",
+  "version": "2026-02-17_v1",
+  "name": "FEATURE",
+  "intuition": "",
+  "set_to_1_if": [
+    ""
+  ],
+  "set_to_0_if": [
+    ""
+  ],
+  "edge_cases": [
+    ""
+  ],
+  "examples_positive": [
+    ""
+  ],
+  "examples_negative": [
+    ""
+  ]
+}

@@ -1,0 +1,4 @@
+Anchor,Compare,Similarity
+I have eaten cake.,I have eaten the cake.,0.95152324
+I have eaten cake.,I have eaten off the cake.,0.8763685
+I have eaten cake.,I have eaten the cake all up.,0.876814

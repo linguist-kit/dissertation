@@ -1,0 +1,22 @@
+,"Pred_haben, indikativ, partizip, prasens","Pred_haben, indikativ, partizip, prat","Pred_haben, koennen, konj2, prat","Pred_haben, konj1, partizip, prasens","Pred_haben, konj2, partizip, prat","Pred_indikativ, partizip, prasens","Pred_indikativ, partizip, prasens, sein","Pred_indikativ, partizip, prasens, sein, werden","Pred_indikativ, partizip, prat","Pred_indikativ, partizip, prat, sein","Pred_indikativ, partizip, prat, sein, werden","Pred_indikativ, prasens","Pred_indikativ, prat","Pred_indikativ, prat, sein","Pred_konj1, partizip, prasens, sein","Pred_konj1, partizip, prasens, sein, werden","Pred_konj2, partizip, prat","Pred_konj2, partizip, prat, sein","Pred_konj2, prat","Pred_konj2, prat, sein","Pred_konj2, prat, werden"
+"True_haben, indikativ, partizip, prasens",64,0,0,0,0,4,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"True_haben, indikativ, partizip, prat",2,6,0,0,0,0,0,0,0,2,0,0,0,0,0,5,0,0,0,0,0
+"True_haben, koennen, konj2, prat",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_haben, konj1, partizip, prasens",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_haben, konj2, partizip, prat",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0
+"True_indikativ, partizip, prasens",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, partizip, prasens, sein",3,0,0,0,0,0,16,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, partizip, prasens, sein, werden",3,0,0,0,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, partizip, prat",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, partizip, prat, sein",1,0,0,0,0,0,0,1,1,3,3,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, partizip, prat, sein, werden",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, prasens",2,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, prat",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_indikativ, prat, sein",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"True_konj1, partizip, prasens, sein",0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"True_konj1, partizip, prasens, sein, werden",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_konj2, partizip, prat",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"True_konj2, partizip, prat, sein",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0
+"True_konj2, prat",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+"True_konj2, prat, sein",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"True_konj2, prat, werden",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

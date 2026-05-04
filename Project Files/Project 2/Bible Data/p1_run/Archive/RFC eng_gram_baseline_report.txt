@@ -1,0 +1,17 @@
+Baseline Classification Report for ENG_GRAM
+==================================================
+                           precision    recall  f1-score   support
+
+        could, participle       0.00      0.00      0.00         1
+        might, participle       0.00      0.00      0.00         0
+               participle       0.00      0.00      0.00         1
+         participle, past       0.90      0.91      0.91        69
+participle, past, present       0.00      0.00      0.00         1
+      participle, present       0.97      1.00      0.98       204
+       participle, should       0.00      0.00      0.00         3
+        participle, would       0.17      0.10      0.12        10
+                  present       0.00      0.00      0.00         3
+
+                 accuracy                           0.91       292
+                macro avg       0.23      0.22      0.22       292
+             weighted avg       0.90      0.91      0.91       292

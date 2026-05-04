@@ -1,0 +1,74 @@
+features:
+  - name: exp
+    label: Experiential reading
+    operationalized: true
+    definition: >
+      A construction expresses an experiential reading if at least one event of the type determined by the predicate occurs within the timespan circumscribed by the context, either implicitly or explicitly. The event must terminate prior to the reference time, which is assumed to be the speech time.
+
+  - name: res
+    label: Resultative reading
+    operationalized: true
+    definition: >
+      A construction expresses a resultative reading if there exists a state, resulting from a change of state event, which holds up to (and possibly including) the reference time, which is assumed to be the speech time.
+
+  - name: univ
+    label: Universal reading
+    operationalized: true
+    definition: >
+      A construction expresses a universal reading if there is an event or state which is true at all points (universally throughout) the interval circumscribed by the discourse.
+
+  - name: dtam
+    label: Compatibility with DTAM
+    operationalized: true
+    definition: >
+      A construction is compatible with DTAM if it is accompanied (felicitously, by default assumption by way of its occurrence in naturalistic speech data) by a past-referencing definite temporal adverbial.
+
+  - name: evid
+    label: Evidentiality
+    operationalized: true
+    definition: >
+      A construction expresses evidentiality if it overtly marks the source of information, whether through grammatical markers (reportedly, apparently) or lexical/discourse framing (I heard, they say).
+
+  - name: tam_lg
+    label: TAM layering
+    operationalized: true
+    definition: >
+      A construction incorporates temporal layering if it involves two or more TAM layers (e.g. perfect + progressive).
+
+  - name: neg
+    label: Negation/polarity effects
+    operationalized: true
+    definition: >
+      A construction demonstrates negation/polarity effects if it occurs under scope of negation.
+
+  - name: ant
+    label: Anteriority
+    operationalized: true
+    values:
+      - complete   # Situation (typically an event) wholly precedes the reference time
+      - initial    # Situation begins before but overlaps with the reference time
+      - none       # No element of the situation is anchored prior to reference time
+    applies_to:
+      - event      # A punctual or bounded occurrence
+      - state      # A static condition or unbounded interval
+      - situation  # The entire temporal footprint of what's being described
+    definition: >
+      A construction encodes anteriority if some component of the described situation (event or state) precedes the reference time, typically the speech time. Anteriority can apply to the entire situation ("complete"), to only the beginning of the situation ("initial"), or not at all ("none").
+
+  - name: curr_rel # Tentative feature, to be revisited after sample annotation
+    label: Current relevance
+    operationalized: false
+    definition: >
+      A construction expresses current relevance if the event or resulting state it encodes is construed as having present significance within the discourse. This may overlap with resultative readings but is intended here as a separate dimension related to discourse interpretation rather than compositional semantics.
+
+metadata:
+  - name: akt
+    label: Aktionsart class
+    values:
+      - activity
+      - accomplishment
+      - achievement
+      - state
+      - semelfactive
+    definition: >
+      Classifies the predicate’s inherent event structure according to Vendler-style Aktionsart categories. Used for exploratory analysis, not treated as a core feature of the perfect construction itself.

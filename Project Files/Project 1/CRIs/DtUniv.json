@@ -1,0 +1,34 @@
+{
+  "feature_id": "DtUniv",
+  "version": "2026-04-15",
+  "name": "Universal",
+  "intuition": "The gram expresses that a state, activity, or habitual series holds continuously from a past starting point up to the reference time.",
+  "set_to_1_if": [
+    "The target verb is modified by a duration adverbial (e.g., 'for five years', 'since childhood', 'all day') indicating a situation that extends to the reference time.",
+    "The predicate denotes a non-terminating situation that holds throughout the entire time span.",
+    "The clause describes a repeated or habitual series of events that characterizes the entire time span.",
+    "When 'since' is present, the clause denotes a situation that has held continuously from the starting point to the reference time."
+  ],
+  "set_to_0_if": [
+    "The clause describes one or more discrete bounded events that do not hold continuously up to the reference time rather than a situation holding continuously across the time span.",
+    "The repetition is explicitly bounded by a numerical count (e.g., 'three times'), indicating distinct occurrences rather than continuous duration.",
+    "The target verb entails a transition into a new state, and the focus is on that transition rather than on a situation holding over time.",
+    "The clause is irrealis, i.e., it describes a non-actual, hypothetical, desired, commanded, or otherwise unrealized situation rather than an event or state presented as actual in the reference world.",
+    "The situation is understood to have ceased prior to or at the reference time, even if it involved duration (e.g., the activity is completed or no longer ongoing in the discourse context)."
+  ],
+  "exceptions": [
+    "With 'since' adverbials, classify as universal (1) when the clause denotes a situation that has held continuously from the starting point. If the clause instead describes discrete or sporadic events occurring after that point, do not classify as universal (0)."
+  ],
+  "examples_positive": [
+    "She has studied Latin for five years. (Duration adverbial -> 1)",
+    "We have always lived here. (non-terminating situation that holds throughout time span -> 1)",
+    "All along, men have attempted to take it by force. (Repeated series of events characterizing whole time span -> 1)",
+    "She has known Anton since childhood. ('Since X [time]' adverbial -> 1)"
+  ],
+  "examples_negative": [
+    "I have visited Paris twice. (Bounded frequency -> 0)",
+    "I have broken the vase. (Punctual result -> 0)",
+    "I have eaten the rice (and now it is gone). (Transition into a new state rather than duration -> 0)",
+    "We should have eaten. (Irrealis, unrealized situation -> 0)"
+  ]
+}

@@ -1,0 +1,64 @@
+Name,Code,Operationalized Definition,Diagnostics,Notes
+Diatam: Experiential,DtExp,"A gram expresses an experiential reading if it conveys that at least one instance of the eventuality described by the predicate has occurred prior to the reference time, without necessarily implying an ongoing result state.","1) Incompatible with modifiers that target result states: I have eaten the rice, so now it's gone (resultative only)
+
+2) Compatible with frequency markers: I have often visited that park, she has never read that book
+
+3) Generally infelicitous with wh-questions unless the question targets the event itself, rather than a resulting state: where have you found my watch (exp only), where have you hidden my watch (amb)",
+Diatam: Resultative,DtRes,"A gram expresses a resultative reading if it encodes or implies a state that results from a change-of-state event, and that that state holds up to, and potentially includes, the reference time (e.g., the speech time in the case of present perfects).","1) Compatible with result state modifiers: I have broken the vase (and now it's broken), he has read that book [before], #and now it’s in the state of having been read
+
+2) Not felicitous with frequency or experience markers: #I have often broken my leg
+
+3) Incompatible with for adverbials: #I have broken my leg for five years",
+Diatam: Universal,DtUniv,"A gram expresses a universal reading if it conveys that a state or event holds continuously throughout a contextually defined time span, typically up to (but not necessarily including) the reference time.","1) Compatible with for adverbials: she has studied Latin for five years
+
+2) Only felicitous with atelic predicates: I have always been tall, she has been swimming for an hour
+
+3) Allows for paraphrasing of since adverbials with all along: she has known Anton since childhood (univ avail), she has visited Anto since childhood (iterative, not univ)",
+Diatam: DTAM,DtDTAM,"A token is annotated as positive for DTAM if it permits felicitous co-occurrence with adverbials (lexical, phrasal, or clausal) that explicitly anchor the event to a specific past time interval.","Does the adverbial ""break"" the English present perfect? If so, it counts.",
+TAML: Tense Shifted,TLTS,A token is tense shifted if the gram overtly encodes a tense specification other than the Simple Present (or Non-Past).,(Same),
+TAML: Aspect: Perfective,TLAspPfv,"A Perfective gram presents a situation as a single, complete whole. It includes the beginning, middle, and end, but treats them as a single ""blob"" without internal temporal structure.","1) Compatible with in adverbials: I painted the wall in two hours (pfv), I painted the wall for two hours (ipfv)
+
+2) Temporal interpretation: (in some languages) a construction with perfective semantics will show a different temporal interpretation depending on the verb's class.
+-With a stative verb, a sentence may have a present interpretation.
+-With a dynamic verb, the same construction will yield a non-present (past or future) interpretation.
+
+3) Incompatible with the progressive (where present in the system): #I have been reading the whole book
+
+4) While test: #while I read the whole book, the phone rang
+
+5) Narrative progression: perfectives can advance the reference time of narrative",
+TAML: Mood: Irrealis,TLMdIrr,"The speaker presents the situation as belonging to a non-actual domain (projected, potential, imagined, or desired). The event has not yet been realized at the time of speech/reference.","The ""Projection"" Diagnostic: Does the clause describe a Potentiality rather than an Actuality?
+- He will arrive tomorrow. -> (Potential/Prediction, not yet fact.) -> Irrealis
+- Go home! (Imperative) -> (Desired event, not yet realized.) -> Irrealis
+- I demand that he be here. -> (Virtual event.) -> Irrealis
+- If it had rained, the ground would be wet. -> (Hypothetical) -> Irrealis",
+Clause: Negative Polarity,ClNegPol,"A token is marked as expressing negation if the gram appears under the scope of a negator (lexical, morphological, or syntactic) or if the clause contains a Negative Quantifier in a core argument position (e.g., 'No one', 'Nothing') that triggers clausal negation. This surface-level annotation is intended to assess whether gramal choice varies as a function of polarity.",(Same),
+Clause: Counterfactual,ClCntfcl,The clause asserts a proposition that is presupposed to be false in the actual world at the time of reference. It describes a situation that would hold true only if a specific condition (contrary to fact) had been met.,"Key Indicator: The ""Fake Past."" The morphology often uses past tense forms to indicate ""distance from reality"" rather than ""distance in time.""
+
+Target: Covers both the if-clause (If I had known...) and the Result-clause (...I would have gone) if both are conceptually unreal.",
+Voice: Passive,VcPass,"A construction where the semantic patient (undergoer) of the event functions as the grammatical subject. The semantic agent is either structurally demoted (to an oblique phrase, e.g., ""by John"") or omitted entirely.",Predicate/gram is overtly marked as passive voice,"This definition helps distinguish true Passives (dynamic events: ""The window was broken by the thief"") from Resultatives/Statives (states: ""The window is broken"")."
+Argument Structure: Transitive,ASTrns,A verb that requires two core arguments: an Agent (Subject) and a Patient/Theme (Direct Object). The action originates with the agent and carries over to affect the patient. (Includes ditransitives),(Same),
+Argument Structure: Unergative,ASUnrg,"An intransitive verb where the single argument is semantically an Agent (doer/volitional actor). Syntactically, the subject behaves like the subject of a transitive verb (it ""does"" the action).","Coding Criteria: The action is typically a volitional process or bodily activity without a directed endpoint.
+
+Diagnostic: Can sometimes take a ""cognate object"" (e.g., He lived a good life), whereas Unaccusatives cannot.",
+Argument Structure: Unaccusative,ASUncc,"An intransitive verb where the single argument is semantically a Patient/Theme (undergoer). Syntactically, the subject originates in the object position (underlyingly) and moves to the subject position.","Coding Criteria: The verb describes a change of state, change of location, or existence, often non-volitional.",
+Aktionsart: State,AktState,"A static situation that involves no change, internal structure, or energy input. It holds true over a period of time unless interrupted.","Coding Criteria: [-Dynamic], [+Durative], [-Telic].
+
+Diagnostic: generally resists the Progressive form in English (e.g., *I am knowing the answer).",
+Aktionsart: Activity,AktAct,A dynamic process that extends over time but has no inherent endpoint or goal. It requires constant energy input to continue.,"Coding Criteria: [+Dynamic], [+Durative], [-Telic].
+
+Diagnostic: Compatible with for X time but not in X time.
+ • He ran for an hour. (Good)
+ • He ran in an hour. (Bad/Implies a specific distance)",
+Aktionsart: Accomplishment,AktAcc,"A dynamic process that extends over time and proceeds toward a necessary terminal point (the climax). The event is not ""true"" or ""complete"" until that point is reached.","Coding Criteria: [+Dynamic], [+Durative], [+Telic].
+
+Diagnostic: Compatible with in X time.
+ • He wrote the letter in an hour.",
+Aktionsart: Achievement,AktAch,"A dynamic change of state that is conceived as instantaneous. It represents the point of transition itself (the ""climax"") without the preparatory process.","Coding Criteria: [+Dynamic], [-Durative], [+Telic].
+
+Diagnostic: Hard to use with stop. One cannot stop reaching the summit; one either has done it or hasn't.",
+Aktionsart: Semelfactive,AktSemel,A dynamic event that is instantaneous (punctual) but has no inherent change of state or result. It is a single quantum of action.,"- Coding Criteria: [+Dynamic], [-Durative], [-Telic].
+
+- Diagnostic: If extended in time (He coughed for an hour), it implies a series of events, not one long continuous event.
+
+- Note: Often interpreted as Iterative (Activity) if widely repeated, but the base unit is Semelfactive.",

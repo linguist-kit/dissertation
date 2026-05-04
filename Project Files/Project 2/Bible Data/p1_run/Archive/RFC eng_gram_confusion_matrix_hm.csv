@@ -1,0 +1,8 @@
+,"Pred_could, participle","Pred_might, participle",Pred_participle,"Pred_participle, past","Pred_participle, present","Pred_participle, would",Pred_present
+"True_could, participle",0,2,0,0,0,0,0
+"True_might, participle",0,0,0,0,0,0,0
+True_participle,0,0,0,0,0,0,0
+"True_participle, past",0,0,1,33,5,2,0
+"True_participle, present",0,0,1,0,116,0,0
+"True_participle, would",0,0,0,0,0,8,0
+True_present,0,0,0,0,2,0,0

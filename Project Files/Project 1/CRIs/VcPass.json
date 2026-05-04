@@ -1,0 +1,30 @@
+{
+  "feature_id": "VcPass",
+  "version": "2026-04-15",
+  "name": "Passive Voice",
+  "intuition": "The semantic patient of the event functions as the grammatical subject. The agent is either expressed in a by-phrase (e.g., 'by John') or omitted entirely. The construction includes overt morphological marking of the passive voice.",
+  "set_to_1_if": [
+    "The gram has the form auxiliary 'have' + 'been' + past participle of a transitive verb (e.g., 'has been eaten', 'had been seen').",
+    "The grammatical subject corresponds to the semantic patient (the entity affected by the event), not the agent.",
+    "The clause contains a 'by'-phrase expressing the external argument of the target verb (e.g., 'has been written by Paul').",
+    "The construction uses 'get/got' as the auxiliary introducing a past participle (e.g., 'got hired', 'has gotten promoted'), indicating a passive interpretation where the subject corresponds to the semantic patient."
+  ],
+  "set_to_0_if": [
+    "The grammatical subject corresponds to the semantic agent (doer/initiator) of the target verb, and the grammatical object corresponds to the semantic patient.",
+    "The complement of 'been' is a non-verbal predicate (NP/AP/PP), and no past participle verb intervenes between 'been' and that predicate; in these cases 'been' is the lexical copula, not a passive auxiliary.",
+    "The subject denotes the undergoer of a change-of-state, but the clause lacks overt passive morphology (i.e., no auxiliary 'be/been' or 'get/got' introducing a past participle); such intransitive alternations (e.g., 'The vase broke') are not passive."
+  ],
+  "exceptions": [
+  ],
+  "examples_positive": [
+    "It has been written. (Passive morphology -> 1)",
+    "We have been discharged. (Passive morphology -> 1)",
+    "He had been known by all. (Passive + agent in 'by'-phrase -> 1)"
+  ],
+  "examples_negative": [
+    "He has written it. (Active -> 0)",
+    "He has been a king. (Copular -> 0)",
+    "The door has been open. (Copular adjective -> 0)",
+    "He has been sleeping. (Active progressive -> 0)"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "20260220T213246Z_0c924fc5",
+  "feature_name": "DtExp",
+  "model_provider": "gemini",
+  "model_name": null,
+  "input_csv_path": null,
+  "cri_json_path": null,
+  "permutation": {
+    "type": "full",
+    "component": null
+  },
+  "prompt": {
+    "version": "v1",
+    "system_template_hash": null,
+    "assembled_prompt_hash": null
+  },
+  "inference": {
+    "temperature": 0.0,
+    "max_tokens": null,
+    "seed": null,
+    "rate_limit_sleep_s": 0.0,
+    "max_retries": 3
+  },
+  "io": {
+    "output_dir": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260220T213246Z_0c924fc5",
+    "jsonl_output_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260220T213246Z_0c924fc5/outputs.jsonl",
+    "csv_output_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260220T213246Z_0c924fc5/outputs_merged.csv"
+  },
+  "notes": ""
+}

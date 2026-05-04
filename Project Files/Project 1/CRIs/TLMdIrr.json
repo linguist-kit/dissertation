@@ -1,0 +1,31 @@
+{
+  "feature_id": "TLMdIrr",
+  "version": "2026-02-21_v1",
+  "name": "TAM Layering: Irrealis Mood",
+  "intuition": "The situation is construed as projected, hypothetical, imagined, desired, or otherwise non-actual. It is not asserted as a realized fact in the actual world.",
+  "set_to_1_if": [
+    "The gram contains a modal auxiliary (e.g., 'will', 'would', 'could', 'should', 'may', 'might') that presents the situation as projected, hypothetical, or uncertain rather than realized.",
+    "The gram appears in a conditional or counterfactual construction (e.g., 'If he had known...', '...he would have gone').",
+    "The gram occurs in a clause expressing desire, obligation, or hypothetical evaluation (e.g., optative or subjunctive contexts).",
+    "The gram is marked as future (e.g., 'He will have finished'), presenting the situation as not yet realized."
+  ],
+  "set_to_0_if": [
+    "The gram asserts the situation as realized in the actual world, and none of the modal, conditional, future, or wish contexts apply."
+  ],
+  "edge_cases": [
+    "Negation alone does not trigger irrealis. 'He has not eaten' asserts a realized state of affairs in the actual world. By contrast, 'I hope he has not eaten' embeds the clause within a domain of desire rather than assertion.",
+    "Interrogative form alone does not trigger irrealis. A question seeking confirmation of an actual fact (e.g., 'Has he arrived?') is realis. However, a question that projects a future or hypothetical outcome (e.g., 'What will he have done by then?') is irrealis."
+  ],
+  "examples_positive": [
+    "He would have gone. (Conditional/hypothetical -> 1)",
+    "If he had known. (Counterfactual -> 1)",
+    "He will have finished by noon. (Future/prediction -> 1)",
+    "He may have gone. (Speculative -> 1)",
+    "I wish he had gone. (Optative -> 1)"
+  ],
+  "examples_negative": [
+    "He has finished. (Asserted as realized in the actual world -> 0)",
+    "He had known the truth. (Fact -> 0)",
+    "He did not go. (Negative fact -> 0)"
+  ]
+}

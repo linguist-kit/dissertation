@@ -1,0 +1,26 @@
+{
+  "feature_id": "AktSemel",
+  "version": "2026-02-21_v1",
+  "name": "Aktionsart: Semelfactive",
+  "intuition": "A dynamic event construed as punctual or near-instantaneous that does not entail a resulting change of state. It consists of a single bounded occurrence without a consequent result condition.",
+  "set_to_1_if": [
+    "The event is construed as a single punctual dynamic occurrence that does not entail a resulting change of state (e.g., 'knock', 'cough', 'blink', 'tap')."
+  ],
+  "set_to_0_if": [
+    "The event entails a transition into a new resulting state (e.g., 'break', 'shatter').",
+    "The event unfolds over a measurable duration rather than occurring as a single punctual occurrence.",
+    "The context construes the event as a repeated or iterative series forming a durative situation (e.g., 'He knocked for a minute')."
+  ],
+  "edge_cases": [
+    "If the clause allows or implies an iterative or repeated interpretation (e.g., 'He knocked on the door'), classify as a durative activity (0); mark as semelfactive (1) only when the context explicitly construes the event as a single bounded occurrence (e.g., 'He gave a single knock')."
+  ],
+  "examples_positive": [
+    "He knocked once. (Single instantaneous event without change of state -> 1)",
+    "He sneezed. (Context-dependent single instantaneous event without change of state -> 1)"
+  ],
+  "examples_negative": [
+    "He knocked for five minutes. (Event is construed as a repeated or iterative series -> 0)",
+    "He broke the glass. (Entails change of state -> 0)",
+    "He was coughing. (Durative activity -> 0)"
+  ]
+}

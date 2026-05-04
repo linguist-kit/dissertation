@@ -1,0 +1,36 @@
+{
+  "run_id": "20260224T213239Z_61c7c9ad",
+  "feature_name": "DtExp",
+  "model_provider": "gemini",
+  "model_name": "gemini-2.0-flash-001",
+  "input_csv_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/input/ntb_input.csv",
+  "cri_json_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/cris/DtExp.json",
+  "data": {
+    "max_tokens": 10,
+    "start_index": 0,
+    "shuffle": false,
+    "random_seed": 0
+  },
+  "permutation": {
+    "type": "full",
+    "component": null
+  },
+  "prompt": {
+    "version": "v1",
+    "system_template_hash": "a162a52f2df71cfe965f20df69fa760eb7aaf1f55cd929401825f456846ab44a",
+    "assembled_prompt_hash": null
+  },
+  "inference": {
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "seed": null,
+    "rate_limit_sleep_s": 1.0,
+    "max_retries": 5
+  },
+  "io": {
+    "output_dir": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260224T213239Z_61c7c9ad",
+    "jsonl_output_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260224T213239Z_61c7c9ad/DtExp_40001018_40006005_20260224.jsonl",
+    "csv_output_path": "/Users/glossophilia/Library/CloudStorage/GoogleDrive-rumilofaniel@gmail.com/My Drive/Diss/Project Files/p1_cri_pipeline/runs/20260224T213239Z_61c7c9ad/DtExp_40001018_40006005_20260224.csv"
+  },
+  "notes": ""
+}

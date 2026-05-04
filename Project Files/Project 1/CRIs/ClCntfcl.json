@@ -1,0 +1,29 @@
+{
+  "feature_id": "ClCntfcl",
+  "version": "2026-04-15",
+  "name": "Clause: Counterfactual",
+  "intuition": "The clause describes a situation that is contrary to fact in the actual world. The event or state is understood not to have occurred, even though it is presented as possible under different conditions.",
+  "set_to_1_if": [
+    "The gram occurs in the protasis ('if'-clause) of a counterfactual conditional, where the condition is understood not to have been satisfied (e.g., 'If I had known…').",
+    "The gram occurs in the apodosis (result clause) of a counterfactual conditional (e.g., '…I would have gone').",
+    "The gram occurs in an inverted conditional protasis without 'if', with the form 'Had' + subject + past participle (e.g., 'Had I known…'), typically paired with a result clause containing a modal perfect such as 'would have'."
+  ],
+  "set_to_0_if": [
+    "The clause presents the situation as having actually occurred in the actual world, without any indication that it is contrary to fact.",
+    "The clause occurs in an open conditional where the truth of the condition remains possible (e.g., 'If he has arrived, let me know'). Such cases are not counterfactual.",
+    "The gram uses past perfect morphology to express temporal anteriority within a narrative (e.g., 'He had left before I arrived') without any indication that the situation is contrary to fact.",
+    "The clause is an embedded interrogative introduced by 'if' or 'whether' (e.g., 'She asked if he had arrived', 'I wondered whether they had left'). In these cases, 'if' marks an indirect question (uncertain truth), not a counterfactual condition, so set to 0."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "If I had known... (Protasis -> 1)",
+    "I would have come. (Apodosis -> 1)",
+    "Had we been there... (Protasis without 'if' -> 1)"
+  ],
+  "examples_negative": [
+    "I had known him for years. (Factual past -> 0)",
+    "If he has arrived, tell him. (Open possibility -> 0)",
+    "She asked if he had arrived. (Indirect question -> 0)",
+    "They wondered whether she was ready. (Epistemic uncertainty -> 0)"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "feature_id": "ASUncc",
+  "version": "2026-02-21_v1",
+  "name": "Argument Structure: Unaccusative",
+  "intuition": "The lexical verb encodes a one-participant event in which the sole argument functions as an internal argument (theme/patient), and the verb does not license an external argument.",
+  "set_to_1_if": [
+    "The target verb does not license or introduce an external argument.",
+    "The target verb denotes a change-of-state event in which the sole argument functions as an internal argument (theme/patient), and no external argument is licensed (e.g., 'die', 'melt', 'break', 'freeze', 'wither').",
+    "The target verb denotes directed motion or change-of-location where the sole argument undergoes displacement and no external argument is licensed (e.g., 'arrive', 'fall', 'leave').",
+    "The target verb denotes existence, appearance, or occurrence without licensing an external argument (e.g., 'exist', 'appear', 'happen', 'remain').",
+    "Copular clauses with 'be' are marked as unaccusative: the verb does not license an external argument, and the sole overt argument functions as the syntactic subject linked to a predicative complement (e.g., 'has been king', 'has been sick', 'has been in the city')."
+  ],
+  "set_to_0_if": [
+    "The target verb licenses or introduces an external argument (agent/initiator), whether overtly realized or suppressed.",
+    "The clause contains an overt direct or indirect grammatical object introduced by the target verb.",
+    "The clause is morphologically passive, and the lexical verb licenses an external argument (whether overtly expressed or suppressed)."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "He has died. (Intransitive change of state -> 1)",
+    "He has arrived. (Change of location without external argument -> 1)",
+    "She has appeared. ((Appearance/coming-into-being -> 1)",
+    "She has been queen for ten years. (Copular 'be' clause -> 1)"
+  ],
+  "examples_negative": [
+    "He has eaten. (Agentive external argument -> 0)",
+    "He has been made king. (Passive -> 0)",
+    "She has flown. (Directed motion with external argument only -> 0)"
+  ]
+}

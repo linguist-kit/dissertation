@@ -1,0 +1,35 @@
+{
+  "feature_id": "ASTrns",
+  "version": "2026-02-21_v1",
+  "name": "Argument Structure: Transitive",
+  "intuition": "The lexical verb encodes an event involving an external argument (agent/initiator) and an internal argument (patient/theme).",
+  "set_to_1_if": [
+    "The target verb introduces an overt grammatical subject and an overt direct object noun phrase. Note that the direct object may occur as the head of a relative clause in which the target verb occurs (e.g., 'what we have done', 'the things we have seen')",
+    "The target is morphologically passive, and the lexical verb licenses both an external argument (agent) and an internal argument (patient), even if the external argument is unexpressed or realized in a 'by'-phrase. The target counts as passive only if it can be interpreted as the passive of a transitive verb with a recoverable patient.",
+    "The target verb licenses two internal arguments (ditransitive pattern), including constructions with both a direct and an indirect object.",
+    "Ambitransitive verbs are marked 1 only when an overt internal argument is present (e.g., 'He has broken the vase').",
+    "Reflexive constructions are marked 1 only when the reflexive pronoun is overt."
+  ],
+  "set_to_0_if": [
+    "The target verb does not introduce an overt internal argument (direct or indirect object).",
+    "The target verb is ambitransitive and is used without an overt internal argument.",
+    "The direct object of the verb is not overt, including implied, understood, pragmatically recoverable, and semantically expected patients.",
+    "The target verb functions as a copula linking the subject to a predicative complement (e.g., 'be', 'become', 'seem'), rather than introducing an internal argument.",
+    "The target verb is a reflexive that occurs with only an implied reflexive reading and no overt reflexive pronoun."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "She has loved the world. (Overt object -> 1)",
+    "This is what we have seen. (Direct object is head of relative clause in which verb occurs -> 1)",
+    "The world has been loved. (Passive -> 1)",
+    "She has sent him the letter. (Ditransitive -> 1)",
+    "He has seen himself. (Reflexive with overt reflexive pronoun -> 1)"
+  ],
+  "examples_negative": [
+    "He has died. (Intransitive -> 0)",
+    "He has eaten. (Object is implied, but not overt -> 0)",
+    "The vase has broken. (Ambitransitive without external argument -> 0)",
+    "We have eaten. (Ambitrantive without overt direct object -> 0",
+    "He has shaveds. (Implied reflexive with no overt reflexive pronoun -> 0"
+  ]
+}

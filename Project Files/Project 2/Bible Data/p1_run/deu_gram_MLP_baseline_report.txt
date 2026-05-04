@@ -1,0 +1,30 @@
+MLP (Neural Network) Baseline Report for DEU_GRAM
+==================================================
+                                            precision    recall  f1-score   support
+
+       haben, indikativ, partizip, prasens       0.84      0.89      0.86        71
+          haben, indikativ, partizip, prat       0.78      0.47      0.58        15
+               haben, koennen, konj2, prat       0.50      1.00      0.67         1
+           haben, konj1, partizip, prasens       0.50      1.00      0.67         1
+              haben, konj2, partizip, prat       0.00      0.00      0.00         4
+              indikativ, partizip, prasens       0.00      0.00      0.00         0
+        indikativ, partizip, prasens, sein       0.62      0.65      0.63        20
+indikativ, partizip, prasens, sein, werden       0.33      0.20      0.25        10
+           indikativ, partizip, prat, sein       0.50      0.33      0.40         9
+   indikativ, partizip, prat, sein, werden       0.25      1.00      0.40         1
+                        indikativ, prasens       0.00      0.00      0.00         5
+                  indikativ, prasens, sein       0.00      0.00      0.00         0
+                           indikativ, prat       0.00      0.00      0.00         2
+                     indikativ, prat, sein       0.50      1.00      0.67         1
+            konj1, partizip, prasens, sein       0.00      0.00      0.00         2
+    konj1, partizip, prasens, sein, werden       0.00      0.00      0.00         1
+               konj2, partizip, prat, sein       0.50      0.40      0.44         5
+       konj2, partizip, prat, sein, werden       0.00      0.00      0.00         0
+                               konj2, prat       0.00      0.00      0.00         2
+                         konj2, prat, sein       0.00      0.00      0.00         1
+                       konj2, prat, werden       0.00      0.00      0.00         1
+                   partizip, prasens, sein       0.00      0.00      0.00         0
+
+                                  accuracy                           0.62       152
+                                 macro avg       0.24      0.32      0.25       152
+                              weighted avg       0.63      0.62      0.61       152

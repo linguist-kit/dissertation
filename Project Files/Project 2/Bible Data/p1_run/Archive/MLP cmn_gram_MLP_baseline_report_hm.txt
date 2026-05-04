@@ -1,0 +1,30 @@
+MLP (Neural Network) Baseline Report for CMN_GRAM
+==================================================
+                          precision    recall  f1-score   support
+
+                               0.00      0.00      0.00         0
+                compound       0.00      0.00      0.00        10
+      compound, guo, you       0.00      0.00      0.00         1
+            compound, le       0.00      0.00      0.00         7
+compound, le, yi, yijing       0.00      0.00      0.00         1
+                     guo       0.67      0.14      0.24        14
+        guo, suo_de, you       0.00      0.00      0.00         0
+                guo, you       0.20      1.00      0.33         2
+                      le       0.35      0.47      0.40        30
+          le, yi, yijing       0.33      0.08      0.13        12
+           le, yi, zaoyi       0.00      0.00      0.00         2
+              le, yijing       0.00      0.00      0.00         0
+                 le, you       0.00      0.00      0.00         0
+              nullmarked       0.55      0.24      0.33        46
+          nullmarked, yi       0.00      0.00      0.00         0
+         nullmarked, you       0.00      0.00      0.00         0
+                  suo_de       0.00      0.00      0.00        20
+                      yi       0.00      0.00      0.00         1
+              yi, yijing       0.00      0.00      0.00         6
+               yi, zaoyi       0.00      0.00      0.00         1
+                     you       0.33      0.17      0.22         6
+                  zaojiu       0.00      0.00      0.00         1
+
+                accuracy                           0.19       160
+               macro avg       0.11      0.10      0.08       160
+            weighted avg       0.32      0.19      0.21       160

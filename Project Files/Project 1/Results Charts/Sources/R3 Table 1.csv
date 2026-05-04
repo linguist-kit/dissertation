@@ -1,0 +1,4 @@
+Model,Claude,Claude,Claude,Claude,Claude
+Metric,Precision,Recall,F1,Kappa,Alpha
+Permutation,,,,,
+full,0.6922532833455176,0.6678618610685096,0.6420956352927446,0.5240369807703378,0.5135685286435461

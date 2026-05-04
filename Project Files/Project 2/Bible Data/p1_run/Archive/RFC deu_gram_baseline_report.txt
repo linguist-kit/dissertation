@@ -1,0 +1,34 @@
+Baseline Classification Report for DEU_GRAM
+==================================================
+                                            precision    recall  f1-score   support
+
+       haben, indikativ, partizip, prasens       0.82      0.91      0.86       130
+          haben, indikativ, partizip, prat       0.62      0.59      0.60        27
+               haben, koennen, konj2, prat       1.00      1.00      1.00         1
+           haben, konj1, partizip, prasens       0.25      0.17      0.20         6
+              haben, konj2, partizip, prat       0.50      0.29      0.36         7
+                        haben, konj2, prat       0.00      0.00      0.00         0
+                haben, konj2, prat, sollen       0.00      0.00      0.00         1
+                     haben, partizip, prat       0.00      0.00      0.00         0
+              indikativ, partizip, prasens       0.00      0.00      0.00         0
+        indikativ, partizip, prasens, sein       0.66      0.71      0.68        35
+indikativ, partizip, prasens, sein, werden       0.50      0.09      0.15        11
+      indikativ, partizip, prasens, werden       0.00      0.00      0.00         1
+                 indikativ, partizip, prat       0.00      0.00      0.00         0
+           indikativ, partizip, prat, sein       0.55      0.60      0.57        10
+   indikativ, partizip, prat, sein, werden       0.00      0.00      0.00         2
+                        indikativ, prasens       0.00      0.00      0.00         6
+                  indikativ, prasens, sein       0.67      1.00      0.80         2
+                           indikativ, prat       0.00      0.00      0.00         5
+                     indikativ, prat, sein       0.25      1.00      0.40         1
+            konj1, partizip, prasens, sein       0.00      0.00      0.00         3
+    konj1, partizip, prasens, sein, werden       0.00      0.00      0.00         1
+                     konj2, partizip, prat       0.00      0.00      0.00         0
+               konj2, partizip, prat, sein       0.75      0.60      0.67         5
+                               konj2, prat       0.00      0.00      0.00         2
+                         konj2, prat, sein       0.25      1.00      0.40         1
+                       konj2, prat, werden       0.00      0.00      0.00         2
+
+                                  accuracy                           0.68       259
+                                 macro avg       0.26      0.31      0.26       259
+                              weighted avg       0.65      0.68      0.66       259

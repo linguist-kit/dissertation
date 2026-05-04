@@ -1,0 +1,36 @@
+{
+  "feature_id": "AktAcc",
+  "version": "2026-04-15",
+  "name": "Aktionsart: Accomplishment",
+  "intuition": "A dynamic, durative event that unfolds over time and necessarily culminates in a defined terminal point or result state. The event includes an inherent process phase leading toward completion.",
+  "set_to_1_if": [
+    "The event includes a durative process phase that trends toward a defined goal (i.e., completion is built into the meaning of the event) or endpoint, and culiminates in a result state, i.e., a state that is encoded in the meaning of the predicate as the outcome that defines its completion.",
+    "The event is modified by an 'in X time' adverbial, indicating completion of a bounded event whose duration is measured (e.g., 'He wrote the letter in an hour').",
+    "The event involves directed motion or action toward a spatial or abstract goal that defines completion (e.g., 'walk to the store', 'run home').",
+    "For cognitive and perceptual verbs that allow both instantaneous and durative readings, if the event involves a measurable duration leading up to completion, set to 1."
+  ],
+  "set_to_0_if": [
+    "The target verb denotes a punctual or near-instantaneous change-of-state or boundary transition without a durative process phase (e.g., 'decide', 'arrive', 'die', 'break').",
+    "The situation is dynamic and durative, but lacks a defined goal (i.e., completion is not built into the meaning of the event) or endpoint, and does not culminate in a result state, a state that is encoded in the meaning of the predicate as the outcome that defines its completion.",
+    "If completion is supplied only by context, discourse, world knowledge, or a temporally bounded frame, rather than being encoded in the predicate itself, do not mark as an accomplishment.",
+    "The event is modified by a durative 'for X time' adverbial without implying completion of a defined goal.",
+    "For cognitive and perceptual verbs that allow both instantaneous and durative readings, if the event is construed as a single punctual transition into awareness or understanding, set to 0."
+  ],
+  "exceptions": [
+    "Time spent deliberating, planning, or causally preceding the event does not count as part of the event’s process phase unless that temporal development is encoded in the event’s meaning."
+  ],
+  "examples_positive": [
+    "We have built the house. (Durative process elading to defined goal -> 1)",
+    "I have done the work. (Durative process with an endpoint expressed as the direct object of the target verb -> 1)",
+    "The ice has melted. (Gradual change of state culminating in a result state [melted/liquid] -> 1)",
+    "She read the book in two hours. ('In X time' adverbial -> 1)",
+    "They have walked to Jerusalem. (Directed motion toward a goal -> 1)",
+    "They have come [here]. (Travel phase toward defined goal ending in arrival at destination -> 1)"
+  ],
+  "examples_negative": [
+    "The guests have arrived. (Punctual boundary transition -> 0)",
+    "She has swum. (Dynamic situation without endpoint -> 0)",
+    "We have walked for two hours. ('For X time' adverbial -> 0)",
+    "He has paid the server. (Punctual event requiring preparation but without process phase -> 0)"
+  ]
+}

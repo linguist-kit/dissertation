@@ -1,0 +1,37 @@
+{
+  "feature_id": "AktAct",
+  "version": "2026-04-15",
+  "name": "Aktionsart: Activity",
+  "intuition": "A dynamic, durative situation that unfolds over time without a defined goal or result state. It requires sustained dynamic engagement to continue, and interruption does not imply failure to reach a defined goal.",
+  "set_to_1_if": [
+    "The target verb denotes a dynamic, durative situation involving ongoing action or natural activity (e.g., 'run', 'swim', 'play', 'work', 'rain').",
+    "The situation is modified by a durative 'for X time' adverbial without implying completion of a goal (e.g., 'He ran for an hour').",
+    "The situation is homogeneous: any subinterval of the situation instantiates the same type of event as the whole (e.g., running for ten minutes is still running).",
+    "The internal argument is unbounded or mass objects (e.g., 'ate apples').",
+    "A repeated or iterative series of punctual events that collectively form a durative, atelic situation is classified as an activity (e.g., 'He knocked on the door for a minute')."
+  ],
+  "set_to_0_if": [
+    "The situation entails a defined result state, i.e., a state that is encoded in the meaning of the predicate as the outcome that defines its completion.",
+    "The situation is modified by an 'in X time' adverbial, indicating completion of a bounded event (e.g., 'He wrote the letter in an hour').",
+    "The situation lacks dynamic unfolding and does not require sustained dynamic engagement to continue.",
+    "The situation consists of a single punctual event without durative unfolding (e.g., 'He knocked once').",
+    "The internal argument is quantized or bounded in a way that entails completion (e.g., 'ate an apple').",
+    "The target verb denotes a bounded perceptual or cognitive event marking the onset of awareness (e.g., 'heard the news', 'saw the sign'); even if the stimulus is extended, the awareness event is treated as a single completed occurrence."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "He has run. (Dynamic durative situation -> 1)",
+    "She swam for an hour. ('For X time' adverbial -> 1)",
+    "They were building a house. (Homogeneous situation -> 1)",
+    "We have eaten apples. (Internal argument is unbounded mass objects -> 1)",
+    "He coughed for a full minute. (Iterative series of punctual events -> 1)"
+  ],
+  "examples_negative": [
+    "He has died. (Defined result state -> 0)",
+    "They took the test in an hour. ('In X time' adverbial -> 0)",
+    "She has always known. (No dynamic unfolding -> 0)",
+    "I sneezed. (Single punctual event without durative unfolding -> 0)",
+    "We ate the apples. (Internal argument is bounded [definite] entailing completion -> 0)",
+    "They have heard the blasphemy. (Bounded perceptual event -> 0)"
+  ]
+}

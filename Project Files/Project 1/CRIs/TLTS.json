@@ -1,0 +1,28 @@
+{
+  "feature_id": "TLTS",
+  "version": "2026-04-15",
+  "name": "TAM Layering: Tesnse Shifted",
+  "intuition": "This feature is present when the gram overtly encodes a tense or mood specification other than the simple present perfect. It distinguishes the canonical present perfect ('have/has' + past participle) from past, future, modal, or progressive perfect forms.",
+  "set_to_1_if": [
+    "The auxiliary is morphologically past (e.g., 'had known', 'had been sleeping').",
+    "The gram includes future marking (e.g., 'will have arrived', 'will have been working').",
+    "The gram includes a modal auxiliary preceding 'have' (e.g., 'would have gone', 'could have seen', 'must have done').",
+    "Set to 1 only if the gram contains 'been' followed immediately by a present participle ('-ing' form), as in 'has been working' or 'have been reading'. 'Been' followed by a past participle does not count; those are passive constructions, not progressive ones."
+  ],
+  "set_to_0_if": [
+    "The gram is formed with present-tense 'have' or 'has' followed by a past participle, with no additional modal, future, or progressive marking.",
+    "Do not assign 1 to passive forms in the simple present, such as 'has been broken' or 'have been eaten'. These are simple present passives, not tense-shifted forms, because 'been' is followed by a past participle rather than an '-ing' form."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "I had known him. (Past Perfect -> 1)",
+    "He will have arrived. (Future Perfect -> 1)",
+    "He would have gone. (Modal Perfect -> 1)",
+    "John has been working a lot. (Progressive -> 1)"
+  ],
+  "examples_negative": [
+    "I have known him. (Simple Present Perfect -> 0)",
+    "The seeds have been planted. (Simple present passtive -> 0)",
+    "She has been here before. (Present perfect of 'be'; no progressive -> 0)"
+  ]
+}

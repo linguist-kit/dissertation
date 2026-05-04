@@ -1,0 +1,25 @@
+Baseline Classification Report for CMN_GRAM
+==================================================
+                          precision    recall  f1-score   support
+
+                               0.00      0.00      0.00         0
+                compound       0.17      0.10      0.12        10
+      compound, guo, you       0.00      0.00      0.00         1
+            compound, le       0.00      0.00      0.00         7
+compound, le, yi, yijing       0.00      0.00      0.00         1
+                     guo       0.60      0.21      0.32        14
+                guo, you       0.00      0.00      0.00         2
+                      le       0.19      0.37      0.25        30
+          le, yi, yijing       0.00      0.00      0.00        12
+           le, yi, zaoyi       0.00      0.00      0.00         2
+              nullmarked       0.32      0.24      0.28        46
+                  suo_de       0.50      0.05      0.09        20
+                      yi       0.00      0.00      0.00         1
+              yi, yijing       0.00      0.00      0.00         6
+               yi, zaoyi       0.00      0.00      0.00         1
+                     you       0.00      0.00      0.00         6
+                  zaojiu       0.00      0.00      0.00         1
+
+                accuracy                           0.17       160
+               macro avg       0.10      0.06      0.06       160
+            weighted avg       0.25      0.17      0.17       160

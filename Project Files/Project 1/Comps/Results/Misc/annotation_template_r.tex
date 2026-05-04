@@ -1,0 +1,69 @@
+% ── Annotation template table (landscape, right-side-up) ──────────────────────
+% \afterpage defers execution until the current page finishes, isolating the
+% landscape environment from the two-column layout and avoiding the blank-page
+% / rotation bugs caused by pdflscape fighting twocolumn mid-page.
+%
+% Packages required in preamble:
+%   \usepackage{afterpage}  % deferred execution — key to making this work
+%   \usepackage{pdflscape}  % true landscape PDF page
+%   \usepackage{array}      % m{} column type, *{}{} repeat, >{} specifiers
+%   \usepackage{booktabs}   % \toprule / \midrule / \bottomrule
+%   \usepackage{graphicx}   % \rotatebox  (already in ACL template)
+%
+% NO \usepackage{caption} needed — standard \caption{} works inside \begin{table}.
+%
+% \newcolumntype{A}{>{\centering\arraybackslash}m{0.42cm}} — keep in preamble.
+%
+% In your document, place this line where you want the table to appear:
+%   \input{annotation_template_r}
+
+\afterpage{%
+  \clearpage
+  \begin{landscape}
+  \begin{table}[h!]
+  \centering
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{
+    >{\raggedright\arraybackslash}m{3.2cm}   % Target
+    >{\raggedright\arraybackslash}m{7.0cm}   % Full Text
+    *{19}{A}                                 % 19 annotation columns
+  }
+  \toprule
+  Target & Full Text &
+    \rotatebox{90}{DtExp}     &
+    \rotatebox{90}{DtRes}     &
+    \rotatebox{90}{DtUniv}    &
+    \rotatebox{90}{DtDTAM}    &
+    \rotatebox{90}{TLTS}      &
+    \rotatebox{90}{TLAspPfv}  &
+    \rotatebox{90}{TLMdIrr}   &
+    \rotatebox{90}{AktAcc}    &
+    \rotatebox{90}{AktAch}    &
+    \rotatebox{90}{AktAct}    &
+    \rotatebox{90}{AktSemel}  &
+    \rotatebox{90}{AktState}  &
+    \rotatebox{90}{ClNegPol}  &
+    \rotatebox{90}{ClCntfcl}  &
+    \rotatebox{90}{VcPass}    &
+    \rotatebox{90}{ASTrns}    &
+    \rotatebox{90}{ASUncc}    &
+    \rotatebox{90}{ASUnrg}    \\
+  \midrule
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \rule{0pt}{2.8\baselineskip} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+  \bottomrule
+  \end{tabular}
+  \caption{Annotation template.}
+  \label{tab:annotation}
+  \end{table}
+  \end{landscape}
+  \clearpage
+}%

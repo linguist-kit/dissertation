@@ -1,0 +1,29 @@
+Baseline Classification Report for DEU_GRAM
+==================================================
+                                            precision    recall  f1-score   support
+
+       haben, indikativ, partizip, prasens       0.83      0.90      0.86        71
+          haben, indikativ, partizip, prat       0.75      0.40      0.52        15
+               haben, koennen, konj2, prat       0.50      1.00      0.67         1
+           haben, konj1, partizip, prasens       0.50      1.00      0.67         1
+              haben, konj2, partizip, prat       0.00      0.00      0.00         4
+              indikativ, partizip, prasens       0.00      0.00      0.00         0
+        indikativ, partizip, prasens, sein       0.62      0.80      0.70        20
+indikativ, partizip, prasens, sein, werden       0.33      0.10      0.15        10
+                 indikativ, partizip, prat       0.00      0.00      0.00         0
+           indikativ, partizip, prat, sein       0.43      0.33      0.38         9
+   indikativ, partizip, prat, sein, werden       0.00      0.00      0.00         1
+                        indikativ, prasens       0.00      0.00      0.00         5
+                           indikativ, prat       0.00      0.00      0.00         2
+                     indikativ, prat, sein       0.50      1.00      0.67         1
+            konj1, partizip, prasens, sein       0.00      0.00      0.00         2
+    konj1, partizip, prasens, sein, werden       0.00      0.00      0.00         1
+                     konj2, partizip, prat       0.00      0.00      0.00         0
+               konj2, partizip, prat, sein       0.80      0.80      0.80         5
+                               konj2, prat       0.00      0.00      0.00         2
+                         konj2, prat, sein       1.00      1.00      1.00         1
+                       konj2, prat, werden       0.00      0.00      0.00         1
+
+                                  accuracy                           0.64       152
+                                 macro avg       0.30      0.35      0.31       152
+                              weighted avg       0.63      0.64      0.63       152

@@ -1,0 +1,27 @@
+{
+  "feature_id": "ClNegPol",
+  "version": "2026-02-21_v1",
+  "name": "Clause: Negative Polarity",
+  "intuition": "The gram presents the described event or state as not occurring or not holding. The situation is construed as absent from reality rather than realized.",
+  "set_to_1_if": [
+    "The auxiliary of the target gram is negated with 'not' or the contracted form 'n't' (e.g., 'has not', 'haven't').",
+    "The clause contains a negative quantifier in subject or object position (e.g., 'No one has come', 'I have seen nothing').",
+    "The adverb 'never' modifies the target gram (e.g., 'has never seen').",
+    "The target gram appears in a 'neither…nor' construction expressing negation."
+  ],
+  "set_to_0_if": [
+    "A negator occurs in the sentence but does not negate the eventuality expressed by the target gram (e.g., 'I have decided not to go' → the negation applies to 'to go', not to 'have decided').",
+    "A negator appears in the sentence but does not negate the target gram (e.g., 'I did not say that he has arrived' → the negation applies to 'say', not to 'has arrived')."
+  ],
+  "edge_cases": [],
+  "examples_positive": [
+    "I have not seen him. (Direct syntactic negation -> 1)",
+    "No one has died. (Negative subject -> 1)",
+    "I have seen nothing. (Negative object -> 1)"
+  ],
+  "examples_negative": [
+    "I have seen him. (Positive -> 0)",
+    "I have decided not to go. (Negation on embedded verb rather than target verb -> 0)",
+    "I didn't know he had arrived. (Negation on matrix verb rather than (embedded) target verb -> 0)"
+  ]
+}

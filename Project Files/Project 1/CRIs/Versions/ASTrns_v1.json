@@ -1,0 +1,30 @@
+{
+  "feature_id": "ASTrns",
+  "version": "2026-02-21_v1",
+  "name": "Argument Structure: Transitive",
+  "intuition": "The lexical verb encodes a two-participant event involving an external argument (agent/initiator) and an internal argument (patient/theme), where the event is construed as directed from the external argument toward and affecting the internal argument.",
+  "set_to_1_if": [
+    "The target verb introduces an overt grammatical subject and an overt direct object.",
+    "The clause is morphologically passive, and the lexical verb licenses both an external argument (agent) and an internal argument (patient), even if the external argument is unexpressed or realized in a 'by'-phrase.",
+    "The verb licenses two internal arguments (ditransitive pattern), including constructions with both a direct and an indirect object."
+  ],
+  "set_to_0_if": [
+    "The target verb does not introduce an overt internal argument (direct or indirect object).",
+    "The verb is used without an overt internal argument in an activity reading (e.g., 'He has eaten', 'She has been reading'), where no affected patient is syntactically realized.",
+    "The target verb functions as a copula linking the subject to a predicative complement (e.g., 'be', 'become', 'seem'), rather than introducing an internal argument."
+  ],
+  "edge_cases": [
+    "Ambitransitive verbs are marked 1 only when an overt internal argument is present (e.g., 'He has broken the vase'); in their intransitive alternation without an overt object (e.g., 'The vase has broken'), they are marked 0.",
+    "Reflexive constructions are marked 1 only when the reflexive pronoun is overt (e.g., 'He has seen himself'); objectless uses with an implied reflexive reading (e.g., 'He has shaved') are marked 0."
+  ],
+  "examples_positive": [
+    "She has loved the world. (Overt object -> 1)",
+    "The world has been loved. (Passive -> 1)",
+    "She has sent him the letter. (Ditransitive -> 1)"
+  ],
+  "examples_negative": [
+    "He has died. (Intransitive -> 0)",
+    "He has eaten. (Object is implied, but not overt -> 0)",
+    "The vase has broken. (Ambitransitive without external argument -> 0)"
+  ]
+}

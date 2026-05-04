@@ -1,0 +1,33 @@
+{
+  "feature_id": "ASUnrg",
+  "version": "2026-02-21_v1",
+  "name": "Argument Structure: Unergative",
+  "intuition": "The lexical verb encodes a one-participant event in which the sole argument functions as the external argument (agent/initiator), and no internal argument is licensed.",
+  "set_to_1_if": [
+    "The target verb introduces an overt grammatical subject but does not license or realize an explicitly stated internal argument (direct or indirect object). For the purposes of this rule, implied internal arguments are not sufficient to trigger positive annotation of this feature. Note that the internal argument may be occur as the head of a relative clause in which the target verb occurs ('what we have done', 'the things that they said').",
+    "The target verb is ambitransitive and is used without an overt internal argument.",
+    "The subject functions as an external argument (agent/initiator) engaged in an activity that does not involve an internal argument (e.g., 'speak', 'work', 'pray').",
+    "The taret verb denotes manner of motion with the subject functioning as the external argument and no internal argument licensed (e.g., 'run', 'walk', 'swim', 'fly'), regardless of presence or absence of an adjunct directional phrases.",
+    "The target verb denotes a bodily action or internally generated activity with the subject functioning as the external argument and no internal argument licensed (e.g., 'cough', 'laugh', 'sleep', 'weep')."
+  ],
+  "set_to_0_if": [
+    "The target verb introduces an internal argument (direct or indirect object). A direct object can be realized either as a complement of the verb or as the head of a relative clause whose gap is the object of the verb.",
+    "The target verb denotes a change-of-state or change-of-location event in which the sole argument functions as an internal argument (theme/patient) rather than an external argument (e.g., 'die', 'break', 'melt', 'fall').",
+    "The target verb denotes existence, appearance, or coming-into-being without projecting an external argument (e.g., 'exist', 'appear')."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "He has eaten. (Subject only -> 1)",
+    "He has flown. (Manner of motion -> 1)",
+    "She has walked to the store. (Manner of motion with destination -> 1)",
+    "She has wept. (Subject is external argument of bodily process -> 1)",
+    "They have labored. (Volitional agent without internal argument/object -> 1)"
+  ],
+  "examples_negative": [
+    "He has hit the ball. (Transitive -> 0)",
+    "Have you understood? (Internal argument implied but not explicitly stated -> 0)",
+    "He has fallen. (Unaccusative -> 0)",
+    "She has appeared. (Appearance/coming-into-being -> 0)",
+    "[We hear] that which you have said. (Direct object of target verb expressed as head of relative clause in which target verb occurs -> 0)"
+  ]
+}

@@ -1,0 +1,124 @@
+const API_KEY = "AIzaSyBRatHkwJwdesj_pk6mfkdjSobuM6SBWLs"; // <--- Make sure your key is still here!
+const model = "gemini-2.0-flash-001"; // <--- Keep your working model (or use "gemini-2.0-flash-exp")
+
+/**
+ * Classifies a specific target token within a text.
+ *
+ * @param {string} promptText The diagnostic instructions.
+ * @param {string} cellText The full verse text.
+ * @param {string} targetToken The specific gram to analyze (e.g. "have eaten").
+ * @return The classification and confidence.
+ * @customfunction
+ */
+function GEMINI_CLASSIFY(promptText, cellText, targetToken) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
+
+  const finalPrompt = `
+  ROLE: You are an expert linguist working on a dissertation.
+  TASK: Analyze the "TARGET GRAM" within the "FULL TEXT" based on the "DIAGNOSTICS".
+  
+  DIAGNOSTICS: ${promptText}
+  
+  FULL TEXT: "${cellText}"
+  TARGET GRAM: "${targetToken}"
+  
+  OUTPUT FORMAT: Respond ONLY with the value (1 or 0) followed by a comma and your confidence (High, Medium, Low).
+  Example: "1, High" or "0, Medium"
+  `;
+
+  const payload = {
+    "contents": [
+      { "parts": [{ "text": finalPrompt }] }
+    ],
+    "generationConfig": {
+      "temperature": 0.0,
+      "maxOutputTokens": 20
+    }
+  };
+
+  const options = {
+    "method": "post",
+    "contentType": "application/json",
+    "payload": JSON.stringify(payload),
+    "muteHttpExceptions": true
+  };
+
+  try {
+    const response = UrlFetchApp.fetch(url, options);
+    const json = JSON.parse(response.getContentText());
+    if (json.candidates && json.candidates[0].content) {
+      return json.candidates[0].content.parts[0].text.trim();
+    } else {
+      return "Error: " + (json.error ? json.error.message : "No response");
+    }
+  } catch (e) {
+    return "Error: " + e.toString();
+  }
+}
+
+function GEMINI_REASON(promptText, cellText, targetToken) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
+
+  // UPDATED PROMPT: Asks for Value, Confidence, and Reasoning separated by "|"
+  const finalPrompt = `
+  ROLE: You are an expert linguist working on a dissertation.
+  TASK: Analyze the "TARGET GRAM" within the "FULL TEXT" based on the "DIAGNOSTICS".
+  DIAGNOSTICS: ${promptText}
+  
+  FULL TEXT: "${cellText}"
+  TARGET GRAM: "${targetToken}"
+  
+  OUTPUT FORMAT: Respond with the value (1 or 0), a comma, your confidence (High, Medium, Low), a pipe symbol (|), and then a one-sentence explanation of your reasoning.
+  
+  Example: "1, High | The plural object 'strange things' implies a duration of observation rather than a punctual event."
+  `;
+
+  const payload = {
+    "contents": [
+      { "parts": [{ "text": finalPrompt }] }
+    ],
+    "generationConfig": {
+      "temperature": 0.0,
+      // INCREASED TOKEN LIMIT: Allows space for the reasoning sentence
+      "maxOutputTokens": 200
+    }
+  };
+
+  const options = {
+    "method": "post",
+    "contentType": "application/json",
+    "payload": JSON.stringify(payload),
+    "muteHttpExceptions": true
+  };
+
+  try {
+    const response = UrlFetchApp.fetch(url, options);
+    const json = JSON.parse(response.getContentText());
+
+    if (json.candidates && json.candidates[0].content) {
+      return json.candidates[0].content.parts[0].text.trim();
+    } else {
+      return "Error: " + (json.error ? json.error.message : "No response");
+    }
+  } catch (e) {
+    return "Error: " + e.toString();
+  }
+}
+
+function LIST_AVAILABLE_MODELS() {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`;
+  const response = UrlFetchApp.fetch(url);
+  const json = JSON.parse(response.getContentText());
+  
+  console.log("=== AVAILABLE MODELS ===");
+  if (json.models) {
+    json.models.forEach(m => {
+      // Filter for models that support 'generateContent'
+      if (m.supportedGenerationMethods && m.supportedGenerationMethods.includes("generateContent")) {
+        console.log("Name: " + m.name);
+      }
+    });
+  } else {
+    console.log("No models found or error parsing.");
+  }
+}

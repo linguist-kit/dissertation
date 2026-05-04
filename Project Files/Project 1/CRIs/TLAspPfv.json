@@ -1,0 +1,34 @@
+{
+  "feature_id": "TLAspPfv",
+  "version": "2026-04-22",
+  "name": "TAM Layering: Perfective Aspect",
+  "intuition": "The gram presents the situation as a bounded whole, without making its internal temporal development accessible. If the predicate denotes a transition, the construal targets the transition itself as a single completed event.",
+  "set_to_1_if": [
+    "The clause presents the situation as a single bounded occurrence with a construed endpoint, rather than as ongoing or habitual.",
+    "The clause contains a completion-measure adverbial (e.g., 'in two hours', 'by dawn', 'at last') that profiles the situation as bounded.",
+    "The predicate is construed as a transition event (e.g., 'die', 'break', 'arrive', 'become', 'wake up', 'find', 'notice'), where the transition itself is asserted as a completed whole.",
+    "The clause functions as a discrete step in a narrative sequence (e.g., 'then', 'after that', 'suddenly'), packaging the situation as a bounded move along the discourse timeline.",
+    "The gram has the form 'have been' + past participle (passive), and the clause asserts a bounded event rather than an ongoing process.",
+    "The target verb denotes a bounded perceptual, cognitive, or evaluative event (e.g., 'hear', 'notice', 'realize', 'approve') when the clause construes it as a completed occurrence, rather than as an ongoing state resulting from that occurrence."
+  ],
+  "set_to_0_if": [
+    "The gram has the form 'be' + '-ing', which profiles the internal temporal development of the situation rather than presenting it as a bounded whole.",
+    "The predicate itself is construed as an ongoing state, condition, or relation, rather than as a bounded event or transition. Do not assign 0 merely because the event creates or presupposes a state; if the clause asserts the choosing, giving, finding, hearing, or other event itself as a completed occurrence, it can still be perfective.",
+    "The clause contains duration adverbials (e.g., 'for five years', 'since childhood', 'all day') that make the internal temporal span accessible rather than packaging the situation as bounded.",
+    "The clause is naturally construed as temporally overlapping with another situation rather than as a discrete bounded event."
+  ],
+  "exceptions": [],
+  "examples_positive": [
+    "I fed the dog. (Single bounded occurrence with endpoint -> 1)",
+    "They built the house in three days. (completion-measure adverbial -> 1)",
+    "We have been discharged. (Passive bounded transition -> 1)",
+    "He has died. (Transition event -> 1)",
+    "Many have been made sinners. (Passive transition -> 1)"
+  ],
+  "examples_negative": [
+    "I have been writing. (Progressive -> 0)",
+    "I have known him. (Stative/unbounded -> 0)",
+    "They have been here since yesterday. (Duration adverbial -> 0)",
+    "He hasn't seen it yet. (Negation via 'not yet' -> 0)"
+  ]
+}

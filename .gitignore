@@ -1,0 +1,5 @@
+.DS_Store
+Writing/
+*.gdoc
+*.gsheet
+.ipynb_checkpoints/

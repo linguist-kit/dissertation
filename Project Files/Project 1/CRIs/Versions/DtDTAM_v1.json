@@ -1,0 +1,29 @@
+{
+  "feature_id": "DtDTAM",
+  "version": "2026-02-21_v1",
+  "name": "Diatam: DTAM",
+  "intuition": "The clause must contain an overt lexical, phrasal, or clausal adverbial that explicitly anchors the event to a specific past time interval. We are checking for the presence of the adverb, not just the compatibility.",
+  "set_to_1_if": [
+    "The clause contains a lexical past time adverb (e.g., 'yesterday', 'then' [only if sequential], 'recently').",
+    "The clause contains a phrasal past time adverb (e.g., 'in 1990', 'last week', 'at 5:00').",
+    "The clause contains a clausal past time anchor starting with temporal conjunctions (e.g., 'when', 'after', 'before', 'since' [temporal])."
+  ],
+  "set_to_0_if": [
+    "The adverbial is a logical connector rather than a temporal one (e.g., 'What shall we say THEN?' -> Logical inference, not time).",
+    "The clause contains conditional/exception markers ('if', 'unless', 'except') that do not establish a specific temporal anchor.",
+    "The adverbial is vague ('lately', 'so far', 'now').",
+    "There is no temporal adverbial of any sort present in the text."
+  ],
+  "edge_cases": [
+    "Distinguish 'then': If it means 'at that time' (e.g., 'He walked in, then he sat'), it is DTAM (1). If it means 'therefore' (e.g., 'What then?'), it is NOT DTAM (0)."
+  ],
+  "examples_positive": [
+    "I had visited him yesterday. (Lexical -> 1)",
+    "They had visited Paris in 2007. (Phrasal -> 1)",
+    "When he arrived, I had left. (Clausal -> 1)"
+  ],
+  "examples_negative": [
+    "I had not known sin. (No adverb -> 0)",
+    "What shall we say then? (Logical 'then' -> 0)"
+  ]
+}

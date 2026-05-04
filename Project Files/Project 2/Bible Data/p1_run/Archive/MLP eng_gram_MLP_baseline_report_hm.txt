@@ -1,0 +1,18 @@
+MLP (Neural Network) Baseline Report for ENG_GRAM
+==================================================
+                            precision    recall  f1-score   support
+
+         could, participle       0.00      0.00      0.00         2
+         might, participle       0.00      0.00      0.00         0
+                participle       0.00      0.00      0.00         0
+          participle, past       1.00      0.78      0.88        41
+ participle, past, present       0.00      0.00      0.00         0
+   participle, past, would       0.00      0.00      0.00         0
+       participle, present       0.95      0.97      0.96       117
+participle, present, would       0.00      0.00      0.00         0
+         participle, would       0.71      0.62      0.67         8
+                   present       0.00      0.00      0.00         2
+
+                  accuracy                           0.89       170
+                 macro avg       0.27      0.24      0.25       170
+              weighted avg       0.93      0.89      0.90       170

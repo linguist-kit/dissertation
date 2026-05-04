@@ -1,0 +1,27 @@
+MLP (Neural Network) Baseline Report for DEU_GRAM
+==================================================
+                                            precision    recall  f1-score   support
+
+haben, indikativ, konj2, partizip, prasens       0.00      0.00      0.00         0
+       haben, indikativ, partizip, prasens       0.79      0.90      0.84        71
+          haben, indikativ, partizip, prat       0.59      0.67      0.62        15
+               haben, koennen, konj2, prat       1.00      1.00      1.00         1
+           haben, konj1, partizip, prasens       0.00      0.00      0.00         1
+              haben, konj2, partizip, prat       0.00      0.00      0.00         4
+        indikativ, partizip, prasens, sein       0.52      0.65      0.58        20
+indikativ, partizip, prasens, sein, werden       0.40      0.20      0.27        10
+           indikativ, partizip, prat, sein       0.62      0.56      0.59         9
+   indikativ, partizip, prat, sein, werden       0.00      0.00      0.00         1
+                        indikativ, prasens       0.00      0.00      0.00         5
+                           indikativ, prat       0.00      0.00      0.00         2
+                     indikativ, prat, sein       1.00      1.00      1.00         1
+            konj1, partizip, prasens, sein       0.00      0.00      0.00         2
+    konj1, partizip, prasens, sein, werden       0.00      0.00      0.00         1
+               konj2, partizip, prat, sein       1.00      0.60      0.75         5
+                               konj2, prat       0.50      0.50      0.50         2
+                         konj2, prat, sein       0.50      1.00      0.67         1
+                       konj2, prat, werden       0.00      0.00      0.00         1
+
+                                  accuracy                           0.66       152
+                                 macro avg       0.36      0.37      0.36       152
+                              weighted avg       0.61      0.66      0.63       152

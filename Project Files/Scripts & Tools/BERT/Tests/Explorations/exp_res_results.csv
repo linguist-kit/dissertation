@@ -1,0 +1,6 @@
+Anchor,Compare,Similarity
+She has painted the wall.,She has painted the wall three times.,0.855457
+She has painted the wall.,She has painted the wall blue.,0.8855618
+She has painted the wall.,She has painted the wall blue (which is why it's blue now).,0.81919944
+She has painted the wall.,"She has painted the wall blue (before).She has painted the wall blue (twice, but right now it's green).",0.80874383
+She has painted the wall.,She has painted.,0.81367826
